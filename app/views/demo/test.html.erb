@@ -1,0 +1,19 @@
+<h1>Demo#test</h1>
+<h2>No, this is the test page!</h2>
+<%= 'testing one, two, three...' %>
+<%= 1+2+3 %> 
+<br />
+<% target = "world" %>
+<%= "Hello #{target}" %>
+
+<% @numbers.each do |n| %><br />
+  <%= n %>
+<% end %>
+<br />
+
+ID: <%= params[:id] %><br />
+ID: <%= @id %><br />
+Next Page: <%= @page + 1 %><br />
+
+<hr />
+<%= params.inspect %>
