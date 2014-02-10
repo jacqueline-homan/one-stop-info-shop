@@ -1,14 +1,8 @@
 SimpleCms::Application.routes.draw do
-  get "subjects/index"
-  get "subjects/show"
-  get "subjects/new"
-  get "subjects/edit"
-  get "subjects/delete"
-  get "subjects/create"
   #get "subjects/create"
   root to: "demo#index", via: :get
   #get "demo/index"
-  get "demo/test"
+  #get "demo/test"
   match ':controller(/:action(/:id))', :via => [:get, :post] # This is our catch-all route
 
   # The priority is based upon order of creation: first created -> highest priority.
