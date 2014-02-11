@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  <title>Simple CMS</title>	  
+	  <title>The Anti-Trafficking One-Stop Info Shop | <%= @page_title || "Admin" %></title>	  
 	</head>
 	<body>
 	  <div id="header">
-	  	<h2>The One-Stop Anti-Trafficking Info Shop - Admin</h2>
+	  	<h2><i>The Anti-Trafficking One-Stop Info Shop - Admin</i></h2>
 	  </div>
-	  <div od="main">
+	  <div id="main">
+	  	<% if !flash[:notice].blank? %>
+           <div class="notice">
+             <%= flash[:notice] %>
+           </div>
+        <% end %>
 	  	<div id="content">
     <!--before yield -->
 	      <%= yield %>
