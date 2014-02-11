@@ -17,7 +17,7 @@ This app uses RSpec and Capybara for running tests. Run tests by entering rspec 
 
 Services (job queues, cache servers, search engines, etc.)
 
-This app does not deploy on Heroku because of Heroku's requirement of using only Postgres whereas this app uses MySQL. Instead, deploy on either, AWS, Digital Ocean or Open Shift which do not require usde of a Postgres db.
+This app does not deploy on Heroku because of Heroku's requirement of using only Postgres whereas this app uses MySQL. Instead, deploy on either AWS, Digital Ocean or Open Shift which do not require an app's use of a Postgres db.
 
 * ...
 
