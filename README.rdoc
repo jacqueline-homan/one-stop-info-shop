@@ -3,26 +3,25 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
-
-* Ruby version
+The Anti-Trafficking One-Stop Info Shop app uses Rails 4.0.2 and Ruby 2.0.0-p353
 
 * System dependencies
 
 * Configuration
 
-* Database creation
+This app uses MySQL for its database in development, test, and production.
 
-* Database initialization
+Database initialization
 
-* How to run the test suite
+This app uses RSpec and Capybara for running tests. Run tests by entering rspec spec/.../ in the terminal.
 
-* Services (job queues, cache servers, search engines, etc.)
+Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+This app does not deploy on Heroku because of Heroku's requirement of using only Postgres whereas this app uses MySQL. Instead, deploy on either, AWS, Digital Ocean or Open Shift which do not require usde of a Postgres db.
 
 * ...
 
+Contact: Jacqueline S. Homan at jacquelinehoman7@gmail.com
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
