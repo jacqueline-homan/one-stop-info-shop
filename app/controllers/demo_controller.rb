@@ -19,6 +19,12 @@ class DemoController < ApplicationController
   	redirect_to("https://godlessfeminist.wordpress.com")
   end
 
+  def text_helpers
+  end
+
+  def escape_output
+  end
+
 
   
 end
