@@ -5,15 +5,15 @@ class SectionsController < ApplicationController
   end
 
   def show
-    @sections = Section.find(params[:id])
+    @section = Section.find(params[:id])
   end
 
   def new
-    @sections = Section.new(:name => "Default")
+    @section = Section.new(:name => "Default")
   end
 
   def create
-    @sections = Section.new(section_params)
+    @section = Section.new(section_params)
     if @section.save
       flash[:notice] = "Section created successfully!"
       redirect_to(:action => 'index')

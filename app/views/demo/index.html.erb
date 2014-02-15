@@ -4,4 +4,10 @@
 <a href="/demo/index">Hello test page</a><br />
 <%= link_to('demo test', {:action => 'test'}) %><br />
 
-<%= link_to('test with parameters', {:action => 'test', :page => 5, :id => 20}) %>
+<%= link_to('test with parameters', {:action => 'test', :page => 5, :id => 20}) %><br />
+<% name = "Jacqueline" %>
+<% name = "Sorry! '); alert('I hacked you!" %>
+
+<%= link_to('Roar', '#', :onclick => "jsRoar('#{j(name)}'); return true;") %>
+
+<%= javascript_tag("jsRoar('#{j(name)}');") %> <%# the j(name) escapes the Javascript and prevents potentially malicious code from executing -%>
